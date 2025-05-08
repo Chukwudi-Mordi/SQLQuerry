@@ -283,12 +283,12 @@ order by title;
 
 -- hoow the list of students who scored better than the AVG grade?
 
-/* 
+
 select student,grade
 from test_scores
 where grade >
 (select avg(grade)
-from test_scores) */
+from test_scores) 
 
 
 
@@ -343,10 +343,10 @@ end) as PG13
 from film,
 
 -- using coalesce
-/*select item, (price - coalesce(discount,0))
-from product_table;*/
+select item, (price - coalesce(discount,0))
+from product_table;
 
 -- to delete a rwo
-/* 
+ 
 delete from table_name
-where colomn_name = 'data'*/ 
+where colomn_name = 'data'
